@@ -1,0 +1,13 @@
+
+
+.container
+{
+
+    background-color:coral;
+    height:  100%;
+    width:  100%;
+    text-align: center;
+    padding: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
