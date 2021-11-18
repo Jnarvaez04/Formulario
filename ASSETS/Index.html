@@ -12,97 +12,102 @@
     <div>
 
         <h1 class="text-center bg-dark" style="color:chocolate">REGISTRO DE ESTUDIANTES SENA</h1>
-
-        <div style="padding-bottom: 50px;">
-            <h1 class="alig">Nombre</h1>
-
-            <div class="center">
-
-
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombres" aria-label="First name">
+    
+    
+        <form id="form">
+            <div style="padding-bottom: 50px;">
+                <h1 class="alig">Nombre</h1>
+    
+                <div class="center">
+    
+    
+                    <div class="col">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombres">
+                    </div>
+    
+    
+    
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                    </div>
+    
                 </div>
-
-
-
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellidos" aria-label="Last name">
+    
+    
+                    <label class="tipe">Tipo de documento</label>
+    
+                <div class="box">
+    
+                    <br>
+                    <form>
+                        <label for="Cédula">Cédula</label>
+                        <input id="Cédula" name="Cédula" type="radio"/>
+                    </form>
+    
+    
+                    <form>
+                        <label for="Tarjeta de Identidad">Tarjeta de Identidad</label>
+                        <input id="Tarjeta de Identidad" name="Tarjeta de Identidad" type="radio">
+                    </form>
+    
+                    <form>
+                        <label for="Pasaporte">Pasaporte</label>
+                        <input id="Pasaporte" name="Pasaporte" type="radio">
+                    </form>
+    
                 </div>
-
-            </div>
-
-
-                <label class="tipe">Tipo de documento</label>
-
-            <div class="box">
-
+    
                 <br>
-                <form>
-                    <label for="Cédula">Cédula</label>
-                    <input id="Cédula" name="Cédula" type="radio"/>
+    
+                <div class="document">
+    
+                    <div class="col">
+                        <label for="Documento">Documento</label>
+                        <input type="text" id="Documento" class="form-control" placeholder="Ingrese su documento de identidad" aria-label="First name">
+                    </div>
+    
+                </div>
+    
+                <br>
+    
+                <div class="email">
+    
+                    <div class="col">
+                        <label for="Correo">Correo</label>
+                        <input type="email" id="Correo" class="form-control" placeholder="Ingrese su correo electrónico" aria-label="First name">
+                    </div>
+    
+                </div>
+    
+                <br>
+    
+                <form class="was-validated">
+                    <div class="mb-3">
+                      <label for="Observaciones" class="form-label" style="font-size: 20px;">Observaciones</label>
+                      <textarea class="form-control" id="Observaciones" placeholder="Ingrese sus observaciones" required></textarea>
+                      <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                      </div>
+                    </div>
+    
                 </form>
-
-
-                <form>
-                    <label for="Tarjeta de Identidad">Tarjeta de Identidad</label>
-                    <input id="Tarjeta de Identidad" name="Tarjeta de Identidad" type="radio">
-                </form>
-
-                <form>
-                    <label for="Pasaporte">Pasaporte</label>
-                    <input id="Pasaporte" name="Pasaporte" type="radio">
-                </form>
-
+    
+    
+                <div class="boton">
+                    <button>Enviar</button>
+                </div>
+    
+    
+    
             </div>
 
-            <br>
 
-            <div class="document">
-
-                <div class="col">
-                    <label for="Documento">Documento</label>
-                    <input type="text" id="Documento" class="form-control" placeholder="Ingrese su documento de identidad" aria-label="First name">
-                </div>
-
-            </div>
-
-            <br>
-
-            <div class="email">
-
-                <div class="col">
-                    <label for="Correo">Correo</label>
-                    <input type="email" id="Correo" class="form-control" placeholder="Ingrese su correo electrónico" aria-label="First name">
-                </div>
-
-            </div>
-
-            <br>
-
-            <form class="was-validated">
-                <div class="mb-3">
-                  <label for="Observaciones" class="form-label" style="font-size: 20px;">Observaciones</label>
-                  <textarea class="form-control" id="Observaciones" placeholder="Ingrese sus observaciones" required></textarea>
-                  <div class="invalid-feedback">
-                    Please enter a message in the textarea.
-                  </div>
-                </div>
-
-            </form>
-
-
-            <form class="boton" method="get" action="../js/index.js" >
-               
-                <button type="button" id="textBox" class="btn btn-dark">Enviar</button>
-            </form>
-
-
-
-        </div>
+        </form>
+        
 
     </div>
 
-    
+    <script src="../js/index.js"></script>
 
 
 </body>
